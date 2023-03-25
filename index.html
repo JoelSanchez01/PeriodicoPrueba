@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodico</title>
+    <link rel="stylesheet" href="todojunto.css">
+</head>
+
+<body>
+
+    <!-- CITLALI -->
+    <div class="header">
+        <header>
+            <a href="#" class="nombre">Turmalina</a>
+            <div class="grupo">
+                <ul class="navegation">
+                    <li><a href="#principal">Principal</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#sociales">Espectaculos</a></li>
+                    <li><a href="#espectaculos">Kpop</a></li>
+                    <li><a href="#footer">Redes</a></li>
+                    <li><a href="#footer">Sobre nosotros</a></li>
+                </ul>
+                <div class="buscador">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="botonBuscar"></ion-icon>
+                        <ion-icon name="close-outline" class="botonCerrar"></ion-icon>
+                    </span>
+                </div>
+            </div>
+            <div class="caja_de_busqueda">
+                <input type="text" placeholder="Busca aqui...">
+            </div>
+        </header>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            let botonBuscar = document.querySelector('.botonBuscar');
+            let botonCerrar = document.querySelector('.botonCerrar');
+            let caja_de_busqueda = document.querySelector('.caja_de_busqueda');
+
+            botonBuscar.onclick = function () {
+                caja_de_busqueda.classList.add('active');
+                botonCerrar.classList.add('active');
+                botonBuscar.classList.add('active');
+            }
+            botonCerrar.onclick = function () {
+                caja_de_busqueda.classList.remove('active');
+                botonCerrar.classList.remove('active');
+                botonBuscar.classList.remove('active');
+            }
+        </script>
+    </div>
+
+    <!-- JOEL -->
+    <div class="joel">
+
+
+        <div class="presentation" id="principal">
+            <div class="text">
+                <h1>Bienvenidx al Chisme, <br>
+                    El Periodico del chisme.</h1>
+                <p>El Periodico de los buenos chismes del TECMANTE, BTS, Jose Madero Stray kids y Harry Styles 10/10</p>
+                <div class="enlaces">
+                    <a  href="#footer" class="negro">Conocenos!</a>
+                    <a href="https://paypal.me/JoelSH01?country.x=MX&locale.x=es_XC" class="verde"  target="_blank">Doneme Dinero!</a>
+                </div>
+
+            </div>
+            <img src="./newswp.svg" alt="" width="350px">
+        </div>
+
+
+
+
+        <section class="tabla" id="sociales">
+            <h2>Espectaculos</h2>
+            <hr>
+            <br>
+
+            <div class="fila">
+                <div class="articles1">
+                    <article class="one">
+                        <img src="https://imagenes.elpais.com/resizer/KFm8bPG-WLqojawvHhWDRjLeI_4=/1960x1103/filters:focal(511x375:521x385)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/4VLWQ45U2I7SNOWMPMQ5HR4XUM.jpg"
+                            alt="">
+                        <h2><a target="_blank" href="https://open.spotify.com/playlist/1b8VdHzbuVlcK0FHpvQlaL?si=dbd8260298234046">Las mejores canciones raras que solo tienen 2 oyentes en spotify</a></h2>
+                        <p class="text">Escucha esta playlist que contiene canciones de artistas de los cuales nadie conoce y apenas cuentan con la cantidad
+                        mínima de oyentes para ser considerados en spotify. </p>
+                        <p class="autor">Joel Sanchez</p>
+                        <p class="fecha">Oct 25 - 4 min read</p>
+                    </article>
+                </div>
+
+                <div class="articles2">
+                    <article class="two">
+                        <img src="https://fastly.4sqi.net/img/general/600x600/70145187_h7dYZSB8aO11v5bWdDSIO9t57hIKcgU_RrrD4ITvZxQ.jpg"
+                            alt="">
+                        <div class="contenido">
+                            <h2><a target="_blank" href="https://www.tripadvisor.com.mx/Tourism-g3194037-Ciudad_Mante_Northern_Mexico-Vacations.html">Lugares para visitar en El Mante</a></h2>
+                            <p class="autor">Joel Sanchez</p>
+                            <p class="fecha">Oct 25 - 4 min
+                        </div>
+                    </article>
+                    <article class="two">
+                        <img src="https://media.gq.com.mx/photos/6397cccb3a03d0df717fba93/1:1/w_1905,h_1905,c_limit/gorillaz%20cracker%20island.jpg"
+                            alt="">
+                        <div class="contenido">
+                            <h2><a href="https://www.gq.com.mx/entretenimiento/articulo/tormenta-cancion-bad-bunny-y-gorillaz-lanzamiento" target="_blank">Colaboracion de Gorillaz y Bad Bunny sale el viernes</a></h2>
+                            <p class="autor">Joel Sanchez</p>
+                            <p class="fecha">Oct 25 - 4 min
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="articles2">
+                    <article class="three">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                        <div class="contenido">
+                            <h2><a target="_blank" href="https://www.record.com.mx/contra/medio-metro-exploto-con-molotov-por-invitar-a-imitador-a-concierto-en-arena-neza">Medio Metro VS Molotov</a></h2>
+                            <p class="autor">Joel Sanchez</p>
+                            <p class="fecha">Oct 25 - 4 min
+                        </div>
+                    </article>
+                    <article class="three">
+                        <img src="https://www.random.news/__export/1668962683069/sites/debate/img/2022/11/20/jungkook-bts-copa_mundial_2022_qatar.jpg_423682103.jpg" alt="">
+                        <div class="contenido">
+                            <h2><a target="_blank" href="https://www.random.news/noticias/Jungkook-de-BTS-hace-historia-y-presenta-Dreamers-en-la-apertura-de-la-Copa-Mundial-2022-en-Qatar--20221120-0002.html">JungKook presenta Dreamers</a></h2>
+                            <p class="autor">Joel Sanchez</p>
+                            <p class="fecha">Oct 25 - 4 min
+                        </div>
+                    </article>
+                    <article class="three">
+                        <img src="http://images.sk-static.com/images/media/img/col4/20211020-185348-859509.jpg" alt="">
+                        <div class="contenido">
+                            <h2><a target="_blank" href="https://lamagazin.com/index.php/2023/02/05/jose-madero-anuncia-aurora-su-nuevo-ep-hace-historia-en-la-arena-cdmx/">Jose Madero presenta su EP "Aurora"</a></h2>
+                            <p class="autor">Joel Sanchez</p>
+                            <p class="fecha">Oct 25 - 4 min
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- BODY -->
+    <div class="body">
+        <!-- MONICA -->
+        <div class="monica" id="noticias">
+            <h2>Últimas noticias </h2>
+            
+            <hr>
+
+            <div class="contenedor">
+                <div class="tarjeta">
+                    <img src="https://eltiempo.press/wp-content/uploads/2020/03/FERIA-VOCACIONAL-TEC-MANTE-2.jpg">
+                    <h3><a target="_blank" href="https://www.instagram.com/p/CoK_h1nvZyO/">Tec mante con intenet gratis</a></h3>
+                    <p>Contamos con red wifi 📶 abierta para el alumnado de nuestro instituto.<br></p>
+                    <p><br><b>Feb 16</b></p>
+
+                </div>
+                <div class="tarjeta">
+                    <img src="https://profesionistas.org.mx/wp-content/uploads/2014/05/28-OCT-1_Mesa-de-trabajo-1.jpg">
+                    <h3><a target="_blank" href="https://www.instagram.com/p/Cn40Ewyvpx1/">Estudiantes del Tecnológico que no han realizado su #ServicioSocial</a></h3>
+                    <p>Si eres alumno de 8° y rezagados, recuerda que es
+                        requisito cumplir con el #ServicioSocial para continuar con residencias.</p>
+                    <p><br><b>Feb 16</b></p>
+
+                </div>
+                <div class="tarjeta">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-WtClYM3SBFiz39UEwhBMyR8U4E_vk21AIPYfPqJFWoPxd0f3v7pLyjz6WsR9vqL1Us&usqp=CAU">
+                    <h3><a target="_blank" href="http://www.itsmante.edu.mx/02/feria-vocacional-2020-28-de-febrero/">Próxima feria vocacional</a></h3>
+                    <p>Tec mante preparandose para la proxima feria vocacional.</p>
+                    <p><br><b>Feb 16</b></p>
+
+                </div>
+                <div class="tarjeta">
+                    <img src="https://www.gob.mx/cms/uploads/article/main_image/37019/FUMAR.jpg">
+                    <h3><a target="_blank" href="https://www.instagram.com/p/CoGBnWGvhHp/">Respetemos a los demás y cuidemos nuestra salud.</a></h3>
+                    <p>El #ITSM es un lugar libre 100% de humo del tabaco y de emisiones provocados por cigarros
+                        electrónicos.
+                    </p>
+                    <p><br><b>Feb 16</b></p>
+
+                </div>
+                <div class="tarjeta">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoPSOKGkjFFC4bK3RXfEBZUBhDwNNx5R1e1g&usqp=CAU">
+                    <h3><a target="_blank" href="https://www.instagram.com/tecmanteoficial/">Ya cuenta con Instagram </a></h3>
+                    <p>Sigue la cuenta de tec mante en instagram.</p>
+                    <p><br><b>Feb 16</b></p>
+
+                </div>
+
+                <div class="tarjeta">
+                    <img
+                        src="https://centromedicoabc.com/wp-content/uploads/2021/04/abc-thumb-blog-c19-uso-cubrebocas.jpg">
+                    <h3><a target="_blank" href="https://www.instagram.com/p/CnpI09pL4-3/">Uso obligatorio de cubrebocas</a></h3>
+                    <p>Atendiendo las medidas sanitarias establecidas por el comité estatal de
+                        seguridad en salud, se implementan el uso obligatorio de medidas preventivas cómo el uso de
+                        cubrebocas,
+                        lavado de manos y aislamiento oportuno de casos sospechosos en nuestro instituto.</p>
+                    <p><br><b>Feb 16</b></p>
+                </div>
+                <div class="tarjeta">
+                    <img target="_blank" src="https://blog.appmision.com/wp-content/uploads/2020/08/examen-egel.jpg">
+                    <h3><a href="http://www.itsmante.edu.mx/01/egel-2023/">EGEL a estudiantes generación 2019 </a></h3>
+                    <p>Se estara aplicando el examen de egreso #EGEL 2023 modalidad aplicación desde casa.</p>
+                    <p><br><b>Feb 16</b></p>
+                </div>
+                <div class="tarjeta">
+                    <img
+                        src="https://www.avanzaentucarrera.com/orientacion/comp/uploads/2014/02/practicas-en-empresas.jpg">
+                    <h3><a target="_blank" href="https://www.instagram.com/p/CnIPXR8vvBR/">Estudiantes que no han cumplido con sus residencias.</a></h3>
+                    <p> Asiste a la reunión virtual que ofrece el #CIIE para más infomación.</p>
+                    <p><br><b>Feb 16</b></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BERE -->
+        <div class="bere" id="espectaculos">
+            <h2>Kpop</h2>
+            
+            <hr>
+            <div class="lista">
+                <div class="elemento">
+                    <div class="numero">
+                        <h3>01</h3>
+                    </div>
+                    <div class="contenido">
+                        <h4 class="Titulo"><a  target="_blank" href="https://los40.com/los40/2023/02/14/musica/1676388396_337313.html">Suga de BTS, tour 2023 "Agust D"</a></h4>
+                        <p class="texto">En la preventa del "Agust D tour" se liberará el 100% de las<br> entradas y
+                            solo podrán
+                            participar fans con ARMY MEMBERSHIP.<br></p>
+                        <p class="fecha">16 de febrero - 2 minutos de lectura</p>
+                    </div>
+                </div>
+                <div class="elemento">
+                    <div class="numero">
+                        <h3>02</h3>
+                    </div>
+                    <div class="contenido">
+                        <h4 class="Titulo"><a target="_blank" href="https://www.bbc.com/mundo/noticias-64543334">Grammy 2023: la extraordinaria vida de Harry Styles</a></h4>
+                        <p class="texto">El artista británico ganó este domingo el más codiciado de los premios<br>de la
+                            industria de la música, el Grammy al mejor álbum del año.</p>
+                        <p class="fecha">06 de febrero - 4 minutos de lectura</p>
+                    </div>
+                </div>
+
+                <div class="elemento">
+                    <div class="numero">
+                        <h3>03</h3>
+                    </div>
+                    <div class="contenido">
+                        <h4 class="Titulo"><a target="_blank" href="https://www.laprensa.hn/espectaculos/no-se-pierda-el-estreno-mundial-de-j-hope-in-the-box-AA12215621">J-Hope in the box" ESTRENO HOY</a></h4>
+                        <p class="texto">Conoce en qué plataformas de streaming podrás ver la <br>
+                            película documental que relata el debut solista de Jung Hoseok</p>
+                        <p class="fecha">18 de febrero - 2 minutos de lectura</p>
+                    </div>
+                </div>
+
+                <div class="elemento">
+                    <div class="numero">
+                        <h3>04</h3>
+                    </div>
+                    <div class="contenido">
+                        <h4 class="Titulo"><a target="_blank" href="https://kpopvip.com/stray-kids-world-tour-maniac-concierto-online-horarios-latam/">Stray Kids, concierto:“2nd World Tour MANIAC”</a></h4>
+                        <p class="texto">Las fechas para los espectáculos de Stray Kids empezaron en Corea del Sur,<br>
+                            por lo que los y las fans festejaron el reencuentro con sus artistas.</p>
+                        <p class="fecha">01 de febrero - 2 minutos de lectura</p>
+                    </div>
+                </div>
+
+                <div class="elemento">
+                    <div class="numero">
+                        <h3>05</h3>
+                    </div>
+                    <div class="contenido">
+                        <h4 class="Titulo"><a target="_blank" href="https://kpopletsgonews.net/idols/seventeen-estrena-su-nuevo-video-musical-hot/">SEVENTEEN estrena su nuevo video musical “HOT”</a></h4>
+                        <p class="texto">La canción, coescrita por Woozi y BUMZU, forma parte del tracklist<br>
+                            de “Face the sun”, nuevo álbum del grupo de k-pop.</p>
+                        <p class="fecha">22 de enero - 1 minutos de lectura</p>
+                    </div>
+                </div>
+
+
+            </div> <!--fin de clase bere-->
+        </div>
+    </div>
+
+
+
+    <!-- CITLALI -->
+    <div class="footer_" id="footer">
+        <footer>
+            <section class="footer">
+                <div class="social">
+                    <a id="IG" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a id="FB" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a id="TW" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a id="TK" href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </div>
+                <ul class="lista">
+                    <li><a href="">Principal</a></li>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="">Chisme</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                </ul>
+                <p class="copyright">
+                    Team Turmalina @2023
+                </p>
+            </section>
+        </footer>
+    </div>
+
+</body>
+
+</html>

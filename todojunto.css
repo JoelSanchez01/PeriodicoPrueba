@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Open Sans",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        sans-serif;
+    color: #16161d;
+            scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fbfbfb;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre {
+    color: #16161d;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+}
+
+
+header ul {
+    position: relative;
+    display: flex;
+    gap: 60px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: #16161d;
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+header ul li a:hover{
+    color:#58be7d;
+    font-size: 1.1em;
+}
+
+header .buscador {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.caja_de_busqueda {
+    position: absolute;
+    right: 100%;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    background: #fbfbfb;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.caja_de_busqueda.active {
+    right: 0;
+}
+
+.caja_de_busqueda input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 1em;
+    background: #fbfbfb;
+    border-bottom: 1px solid #878c91;
+}
+
+.botonBuscar {
+    position: relative;
+    left: 30px;
+    top: 1.5px;
+    transition: 0.5s ease-in-out;
+}
+
+.botonBuscar.active {
+    left: 0;
+
+}
+
+.botonCerrar {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    scale: 0;
+}
+
+.botonCerrar.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    scale: 1;
+}
+
+/* FOOTER */
+
+
+footer {
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fbfbfb;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    padding: 0px 0;
+    background: #fbfbfb;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #16161d;
+}
+
+.footer .social a {
+    font-size: 1.5em;
+    color: #878c91;
+    display: inline-block;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: #878c91;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.0em;
+    color: #878c91;
+}
+
+/* presentacion */
+
+.joel{
+    margin-top: 100px;
+}
+
+.joel .presentation {
+    padding: 30px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+    border-radius: 5px;
+    background-color: #e9f4f5;
+}
+
+.joel .presentation .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.joel .presentation h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+.joel .presentation p {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.joel .presentation .enlaces {
+    display: flex;
+    margin-top: 40px;
+    font-size: 18px;
+    transition: all .3s;
+
+}
+
+.joel .presentation .negro {
+    border-radius: 5px;
+    background-color: #16161d;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    transition: all .3s;
+    margin-right: 15px;
+}
+
+.joel .presentation .negro:hover {
+    color: #16161d;
+    background-color: #b5bcbc;
+}
+
+.joel .presentation .verde {
+    border-radius: 5px;
+    background-color: #58be7d;
+    color: #16161d;
+    padding: 15px 15px;
+    text-decoration: none;
+    border: 2px solid #58be7d;
+    transition: all .3s;
+}
+
+.joel .presentation .verde:hover {
+    color: #16161d;
+    background-color: #e9f4f5;
+    border: 2px solid #58be7d;
+
+}
+
+/* TABLA */
+
+.joel .tabla {
+    height: 600px;
+
+}
+
+.joel .tabla .fila {
+    display: flex;
+}
+
+.joel .tabla .articles1 {
+    margin: 0 30px;
+    width: 30%;
+    height: 100%;
+
+}
+
+.joel .tabla h2 {
+    transition: all .3s;
+    margin: 10px 0px;
+}
+
+.joel .tabla .fecha {
+    color: #757575;
+}
+
+.joel .tabla .text {
+    font-weight: lighter;
+    margin: 15px 0px;
+}
+
+
+.joel .tabla img {
+    width: 100%;
+}
+
+.joel .tabla .articles2 {
+    width: 30%;
+    height: 100%;
+
+}
+
+.joel .tabla .articles2 h2 {
+    font-size: 20px;
+}
+
+.fila a{
+    text-decoration: none;
+    color: #16161d;
+    transition: all .3s;
+}
+
+.fila a:hover {
+    color: #58be7d;
+}
+
+
+
+.joel .tabla .articles2 .two,
+.three {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.joel .tabla .articles2 .two img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.joel .tabla .articles2 .three img {
+    width: 30%;
+    margin-right: 20px;
+}
+
+
+/* NOTICIAS */
+
+.monica {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+}
+
+.monica .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.monica .contenedor .tarjeta {
+    padding: 1%;
+    margin: 1%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+}
+
+.monica .contenedor .tarjeta a{
+    text-decoration: none;
+    color:#16161d ;
+    transition: all .3s;
+}
+
+.monica .contenedor .tarjeta a:hover{
+    color: #58be7d;
+}
+
+
+
+.monica .contenedor .tarjeta img {
+    width: 100%;
+}
+
+.monica .contenedor .tarjeta p {
+    font-weight: lighter;
+}
+
+
+/* SIDEBAR */
+
+.bere {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.bere .lista .elemento .numero {
+    font-size: 30Px;
+    color: #dfdfdf;
+    margin-right: 20Px;
+}
+
+.bere hr, h2{
+    margin-bottom: 10px;
+}
+
+.bere a {
+    text-decoration: none;
+    color:#16161d;
+    transition: all .3s;
+}
+
+.bere a:hover{
+    color:#58be7d;
+}
+
+.bere .lista .elemento {
+    display: flex;
+}
+
+.bere .lista .elemento p {
+    margin: 15Px 15Px;
+}
+
+.bere .lista .elemento .fecha {
+    color: #cbcbcb;
+}
+
+.body {
+    display: flex;
+}
+
+#IG, #FB, #TW, #TK {
+    transition: all .3s;
+}
+
+#IG:hover{
+    color:#fd0991;
+}
+
+#FB:hover {
+    color: #0d8af0;
+}
+
+#TW:hover {
+    color: #1a8cd8;
+}
+
+#TK:hover {
+    color: #ef2a50;
+}
+
+
+.lista a{
+    transition: all .3s;
+}
+
+.lista a:hover{
+    color:#58be7d;
+}
+
+
+
+
